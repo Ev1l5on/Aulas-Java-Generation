@@ -1,0 +1,40 @@
+package exercicio4;
+
+import java.util.Scanner;
+
+public class exercicio4 {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * 4. Escreva  um sistema que leia três números inteiros e positivos (A, B, C)
+		 *  e calcule a seguinte expressão:   
+		 */
+		
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		
+		int A, B, C, D, R, S;
+		
+		System.out.println("Entre com A: ");
+		A = sc.nextInt();
+		
+		System.out.println("Entre com B: ");
+		B = sc.nextInt();
+		
+		System.out.println("Entre com C: ");
+		C = sc.nextInt();
+		
+		R = (A + B) * (A + B);
+		
+		S = (B + C) * (B + C);
+		
+		D = (R + S)/2;
+		
+		System.out.printf("A resposta é: %d ", D);
+		
+		
+	}
+
+}
+
